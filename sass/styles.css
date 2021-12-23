@@ -1,0 +1,219 @@
+/*FONTS IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+/*VARIABLES*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+* header {
+  padding: 15px;
+  background-color: #000000;
+}
+
+* header #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* header h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+* header div input[type="checkbox"] {
+  display: none;
+}
+
+* .information {
+  margin-top: 50px;
+}
+
+* .information h1 {
+  max-width: 75%;
+  margin: auto;
+  font-size: 50px;
+}
+
+* .information h1 span {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+* body .information h1 {
+  text-align: center;
+}
+
+* body .information h1 span {
+  text-transform: uppercase;
+  display: block;
+}
+
+* body .counthdown {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 600;
+  background: linear-gradient(-45deg, #a32424, #2f0cc9, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  padding: 15px;
+}
+
+* body .counthdown div {
+  font-family: "Montserrat", sans-serif;
+}
+
+* body .counthdown div span {
+  display: block;
+  text-align: center;
+}
+
+* body footer .social-networks {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* body footer .social-networks div a {
+  text-decoration: none;
+}
+
+* body footer .social-networks div a img {
+  width: 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header #nav div img {
+    width: 50px;
+  }
+  .counthdown div {
+    font-size: 35px;
+    padding: 15px;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  header #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header #nav div img {
+    width: 35px;
+  }
+  .information h1 {
+    font-size: 25px;
+  }
+  .information h1 span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  .counthdown {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .counthdown div {
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .counthdown div span {
+    display: block;
+  }
+  footer .social-networks div a img {
+    width: 35px;
+  }
+  footer p {
+    padding: 10px;
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    color: #000000;
+  }
+  50% {
+    background-position: 100% 50%;
+    color: white;
+  }
+  100% {
+    background-position: 0% 50%;
+    color: #000000;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    color: #000000;
+  }
+  50% {
+    background-position: 100% 50%;
+    color: white;
+  }
+  100% {
+    background-position: 0% 50%;
+    color: #000000;
+  }
+}
+
+.dark-mode {
+  background-color: black;
+  color: #ffffff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.white-mode {
+  background-color: white;
+  color: #000000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=styles.css.map */
