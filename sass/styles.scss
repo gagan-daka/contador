@@ -18,8 +18,10 @@ $desktop-media: "only screen and (min-width : 1024px)";
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
         h2{
+            font-size: 35px;
             a{
                 text-decoration: none;
                 color: #ffffff;
@@ -69,6 +71,7 @@ $desktop-media: "only screen and (min-width : 1024px)";
             background: linear-gradient(-45deg, #a32424, #2f0cc9, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
+            animation: shadowEffect 15s ease infinite;
             padding: 15px;
             div{
                 font-family: $montserrat_font;
@@ -194,6 +197,18 @@ $desktop-media: "only screen and (min-width : 1024px)";
 		background-position: 0% 50%;
         color: #000000;
 	}
+}
+
+@keyframes shadowEffect{
+    0%{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    }
+    50%{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+    100%{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    }
 }
 
 .dark-mode{

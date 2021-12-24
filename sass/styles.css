@@ -23,6 +23,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* header h2 {
+  font-size: 35px;
 }
 
 * header h2 a {
@@ -76,6 +83,8 @@
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
+  -webkit-animation: shadowEffect 15s ease infinite;
+          animation: shadowEffect 15s ease infinite;
   padding: 15px;
 }
 
@@ -200,6 +209,36 @@
   100% {
     background-position: 0% 50%;
     color: #000000;
+  }
+}
+
+@-webkit-keyframes shadowEffect {
+  0% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  }
+  50% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+  100% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  }
+}
+
+@keyframes shadowEffect {
+  0% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  }
+  50% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+  100% {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   }
 }
 
