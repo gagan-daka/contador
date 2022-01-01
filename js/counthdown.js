@@ -15,7 +15,7 @@ function toggleIcon(){
 
 
 //var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-var countDownDate = new Date("January 31, 2022 23:30:00").getTime();
+var countDownDate = new Date("January 30, 2022 23:45:00").getTime();
     
 var x = setInterval(function() {
   var now = new Date().getTime();
